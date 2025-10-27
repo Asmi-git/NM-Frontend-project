@@ -1,0 +1,185 @@
+<html>
+
+<head>
+  <title>Login Form</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-image: url("https://media.istockphoto.com/id/1329881430/photo/shot-of-a-notebook-and-pen-on-a-desk-in-an-office.webp?b=1&s=612x612&w=0&k=20&c=v0N45ILdqhgcGFhgf-99mwDtqXxZby6M-NJ8-83Ssi0=");
+    background-size: cover;
+  }
+
+  p {
+    background-color: rgb(132, 132, 139);
+    color: white;
+    font-style: bold;
+    height: 20px;
+    padding: 5px;
+    font-size: 18px;
+  }
+
+  .main {
+    padding: 20px;
+    margin-top: 30px;
+    width: 600px;
+    height: 700px;
+    border: solid 2px;
+    border-radius: 5%;
+    background-color: rgba(237, 243, 249, 0.5);
+  }
+
+  #name,
+  #email,
+  #password,
+  #tel,
+  #age {
+    border-radius: 20px;
+    width: 230px;
+    height: 25px;
+    border-color: rgba(181, 181, 189, 0.932);
+  }
+
+  #dob,
+  #contact-time {
+    width: 230px;
+    height: 25px;
+    border-color: rgba(181, 181, 189, 0.932);
+  }
+
+  #year,
+  #dept,
+  #time {
+    width: 130px;
+    height: 25px;
+    border-color: rgba(181, 181, 189, 0.932);
+  }
+  #h1{
+    margin-top:30px;
+  }
+  #submit,#reset{
+    color:white;
+    background-color: rgba(63, 63, 66, 0.744);
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: antiquewhite;
+    width:70px;
+    height:25px;
+  }
+  #td-submit,#td-reset{
+    text-align: center;
+  }
+  #td-checkbox label{
+    margin-right: 12px;
+  }
+  #td-gender .gen{
+    margin-left: 20px;
+  }
+</style>
+
+<body>
+  <center>
+    <p><b>Best way to improve your skills!! Join with Us <em>ALERT</em>-Don't miss out the
+        oppurtunity!!!</b></p>
+    <h1 id="h1">Registration form</h1>
+    <div class="main">
+      <h4>Please enter the following details for applying for the course!</h4>
+      <form>
+
+        <table cellspacing="15">
+          <tr>
+            <td><label for="name">Name<br></label></td>
+            <td><input type="text" id="name"></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email ID</label></td>
+            <td><input type="email" id="email"></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td><input type="password" id="password"></td>
+          </tr>
+          <tr>
+            <td><label for="tel">Phone Number</label></td>
+            <td><input type="tel" id="tel"></td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date of Birth</label></td>
+            <td><input type="date" id="dob"></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender</label></td>
+            <td id="td-gender"><input type="radio" id="gender" value="Male">Male
+              <input type="radio" id="gender" value="Female" class="gen">Female
+              <input type="radio" id="gender" value="Others" class="gen">Others
+            </td>
+          </tr>
+          <tr>
+            <td><label for="age">Age</label></td>
+            <td><input type="number" id="age" max="3"></td>
+          </tr>
+          <tr>
+            <td><label for="address">Address</label></td>
+            <td><textarea id="address" rows="4" cols="25"></textarea></td>
+          </tr>
+          <tr>
+            <td><label for="clgname">Collage Name</label></td>
+            <td><textarea id="clgname" rows="2" cols="25"></textarea></td>
+          </tr>
+          <tr>
+            <td><label for="year">Year</label></td>
+            <td><select id="year">
+                <option>I Year</option>
+                <option>II Year</option>
+                <option>III Year</option>
+                <option>IV Year</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dept">Department</label></td>
+            <td><select id="dept">
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>GEO</option>
+                <option>MECH</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Profile Picture upload</td>
+            <td><input type="file"></td>
+          </tr>
+          <tr>
+            <td>Time of Registration</td>
+            <td><input type="time" id="time"></td>
+          </tr>
+          <tr>
+            <td>Prefered contact time</td>
+            <td><input type="datetime-local" id="contact-time"></td>
+          </tr>
+          <tr>
+            <td><label>Known Programming language</label></td>
+            <td id="td-checkbox"><label><input type="checkbox" value="C"> C</label>
+              <label><input type="checkbox" value="C++"> C++</label>
+              <label><input type="checkbox" value="Python"> Python</label>
+              <label><input type="checkbox" value="Java"> Java</label>
+              <label><input type="checkbox" value="HTML"> HTML</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td id="td-submit"><input type="submit" value="Submit" id="submit"></td>
+            <td id="td-reset"><input type="reset" value="Reset" id="reset"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </center>
+</body>
+
+</html>

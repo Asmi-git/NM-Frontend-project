@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/6a/39/8e/6a398e2bffd61024b7fa8c6eaf6a4e62.png">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+        .top{
+            display: flex;
+            gap:80px;
+            margin-top: 0;
+        }
+        .img img {
+
+            width: 500px;
+            height: 500px;
+        }
+
+        .login {
+            
+            width: 400px;
+            height: 300px;
+
+        }
+
+        .login input {
+            width: 90%;
+            height: 30px;
+            border: solid 0.5px grey;
+        }
+
+        input::placeholder {
+            font-size: small;
+        }
+
+        .login button {
+            width: 90%;
+            height: 35px;
+            background-color: rgb(84, 162, 247);
+            color: white;
+            border-radius: 30px;
+            border: solid 0.5px grey;
+        }
+        .bottom{
+            margin-top: 0px;
+        }
+        .menu{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu li{
+            display: inline-block;
+            margin-right: 10px;
+            color: grey;
+        }
+        .menu li:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #select{
+            border: 0.2px;
+            color:grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">
+            <div class="img">
+                <img src="loginimage.png">
+            </div>
+            <div class="login">
+                <center>
+                    <h1><img src="https://fontmeme.com/images/instagram-new-logo.png" width="250px" height="110px"></h1>
+                </center>
+                <form>
+                    <input type="text" placeholder="Phone number,username or email address" required><br><br>
+                    <input type="password" placeholder="Password(Enter atleast 8 characters)" maxlength="15" required><br><br>
+                    <button>Log In</button>
+                </form>
+                <center>
+                    <h4>OR</h4>
+                    <h4 style="color:rgb(106, 149, 240); font-size: 18px;"><img src="facebook.png" width="15px" height="14px"> Log In with facebook</h4>
+                    <h4><i><a href="">Forgotten your password?</a></i></h4>
+                    <h4>Don't have an account?<a href="">Sign up</a></h4>
+                </center>
+            </div>
+        </div>
+        <div class="bottom">
+            <center>
+                    <ul class="menu">
+                        <li>Meta</li>
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Jobs</li>
+                        <li>API</li>
+                        <li>Privacy</li>
+                        <li>Terms</li>
+                        <li>Locations</li>
+                        <li>Instagram Lite</li>
+                        <li>Meta AI</li>
+                        <li>Meta AI Articles</li>
+                        <li>Threads</li>
+                        <li>Contact Uploading & Non-users</li>
+                        <li>Meta Verified</li>
+                    </ul><br>
+                    <ul class="menu">
+                        <li><form><select id="select">
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Malayalam</option>
+                            <option>Tamil</option>
+                            <option>French</option>
+                        </select></form></li>
+                        <li>ⓒ2025 Instagram from Meta</li>
+                    </ul>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>

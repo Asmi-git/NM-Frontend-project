@@ -1,0 +1,407 @@
+#home-background {
+    background-image: url("background-Photoroom.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.black-background {
+    background-color: black;
+    color: #ffffff;
+    background-size: cover;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.heading1 {
+    color: red;
+    padding-top: 20%;
+    padding-left: 5%;
+}
+
+.heading2 {
+    color: beige;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+
+.heading3 {
+    color: #ffffff;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+
+.underline-color {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+}
+
+.underline-color::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    transition: 0.5s;
+}
+
+.underline-color:hover::after {
+    width: 35px;
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgb(39, 37, 37);
+    width: 100%;
+}
+
+.brand-logo {
+    width: 300px;
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transform: scaleY(1.3);
+    transform-origin: bottom;
+    white-space: nowrap;
+}
+
+.brand-logo span {
+    color: red;
+}
+
+#About-section {
+    padding-top: 10%;
+}
+.about-title {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.about-title::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+.about-title:hover::after {
+    width: 130px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    left: 0;
+    transition: 0.5s;
+    position: absolute;
+    bottom: -8px;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul {
+    padding-left: 0;
+}
+
+.tab-contents ul li {
+    list-style-type: none;
+}
+
+.tab-contents ul li span {
+    color: #ff004f;
+    font-size: 15px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.col-6 img {
+    padding: 10px;
+}
+
+.my-services-background {
+    background-color: rgb(52, 44, 44);
+    height: 50vh;
+    width: 40vh;
+    padding: 3vh;
+    margin: 10px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s
+}
+
+.my-services-background:hover {
+    background: #ff004f;
+    transform: translate(-10px);
+}
+
+.row {
+    margin-left: 35px;
+}
+
+.my-services-h2 {
+    color: #ffffff;
+    font-size: 20px;
+    padding-top: 2%;
+    padding-left: 5%
+}
+
+#learn2 {
+    position: absolute;
+    padding-top: 22px;
+}
+
+#learn3 {
+    position: absolute;
+    padding-top: 44px;
+}
+
+#learn4 {
+    position: absolute;
+    padding-top: 20px;
+}
+
+.service-title {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    padding: 70px 0 50px 65px;
+    cursor: pointer;
+}
+
+.service-title::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 65px;
+    bottom: 40px;
+    transition: 0.5s;
+}
+
+.service-title:hover::after {
+    width: 150px;
+}
+
+.work-title {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    padding: 80px 0 30px 65px;
+    cursor: pointer;
+}
+
+.work-title::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 65px;
+    bottom: 10px;
+    transition: 0.5s;
+}
+
+.work-title:hover::after {
+    width: 100px;
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.work img {
+    border-radius: 10px;
+    display: block;
+    transition: tranform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.contact-title {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    padding: 60px 0 20px 0;
+    cursor: pointer;
+}
+
+.contact-title::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    transition: 0.5s;
+}
+
+.contact-title:hover::after {
+    width: 150px;
+}
+
+.contact-left {
+    padding-top: 10px;
+}
+
+.btn {
+    background-color: #ff004f;
+    height: 35px;
+    width: 20vh;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 20px;
+
+}
+
+#cv-btn {
+    margin-left: 10px;
+}
+
+#submit-btn {
+    height: 35px;
+    width: 90px;
+    margin-top: 15px;
+}
+
+.contact-para {
+    font-size: 20px;
+    padding: 2px;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.change-size {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.change-size:hover {
+    color: red;
+    font-size: 22px;
+}
+
+.footer {
+    background-color: rgb(39, 37, 37);
+    margin-top: 30px;
+    height: 60px;
+    width: 100vw;
+    text-align: center;
+}
+
+.footer-para {
+    padding: 15px;
+    font-size: 18px;
+}
+#msg {
+    font-size: 12px;
+}
+
