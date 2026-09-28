@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div id="home-background">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand brand-logo" href="#"><span>A</span>smi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active  ">
+                        <a class="nav-link underline-color" href="#home-background">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link underline-color" href="#About-section">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link underline-color" href="#My-Services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link underline-color" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link underline-color" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h2 class="heading1">Aspiring Full Stack Developer</h2>
+        <h1 class="heading2">Hi,I'm Asmi S</h1>
+        <h3 class="heading3">Passionate about building dynamic <br>and user-friendly web application...</h3>
+    </div>
+    <div class="black-background">
+        <div id="About-section" style="padding-top: 80px;">
+            <div class="container" style="margin-left: 0;">
+                <div class="row justify-content-center" style="margin-left: 0;">
+                    <div class="col-12 col-md-6 text-center">
+                        <img src="myimgcopy.jpg" alt="My image" class="about-img">
+                    </div>
+                    <div class="col-12 col-md-6 about-text-col">
+                        <h1 class="about-title">About Me</h1>
+                        <p style="padding-top: 10px;">I’m an aspiring full stack developer with a strong interest in
+                            building responsive,
+                            user-friendly web applications. I enjoy working across both front-end and back-end
+                            technologies, and I’m continuously learning new tools to strengthen my skills. Currently,
+                            I’m focused on improving my knowledge in frameworks like React and Node.js, while working on
+                            personal projects that challenge and inspire me.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming:</span><br>Basic knowledge of Python, C, and Java</li>
+                                <li><span>Web Development:</span><br>HTML, CSS, JavaScript</li>
+                                <li><span>Tools:</span><br>VS Code, basic Git & GitHub</li>
+                                <li><span>Concepts:</span><br>Programming logic, problem-solving</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Web Development Intern — BitsNPixs Technologies Pvt. Ltd.</span><br>
+                                    <em>4th June 2026 – 3rd July 2026</em><br>
+                                    Completed a Web Development Internship with hands-on experience in developing web
+                                    applications using HTML, CSS, JavaScript, PHP, and MySQL. Worked on an Expense
+                                    Tracker project for managing income, expenses, transactions, and spending records.
+                                    Used VS Code, XAMPP, and MySQL for development and database management.</li>
+                                <li><span>2026 – Present</span><br>Currently focused on learning full stack web
+                                    development through self-study and online resources. Gaining foundational knowledge
+                                    in frontend and backend technologies, with plans to build personal projects to apply
+                                    and grow practical skills.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>University: Anna University Regional Campus, Tirunelveli</span><br>B.E.
+                                    Computer Science and Engineering<br>2023 – 2027 (Pursuing)</li>
+                                <li><span>School: Sree Ramakrishna Matriculation Higher Secondary School,
+                                        Paraicode</span><br>Higher Secondary School Certificate (HSC)<br>Graduated: 2023
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="My-Services">
+            <h1 class="service-title">My services</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class=" col-sm-6 col-md-6 col-lg-3 col-xl-3  my-services-background">
+
+                            <h2 class="my-services-h2">🔄 End-to-End Development</h2>
+                            <p class="about-para">From frontend to backend, I handle the complete development cycle —
+                                UI/UX, server-side logic, APIs, databases, and deployment — all in one place.</p>
+
+                            <a href="https://integrio.net/blog/end-to-end-software-development-services"
+                                target="_blank">Learn more</a>
+
+                        </div>
+                        <div class=" col-sm-6 col-md-6 col-lg-3 col-xl-3  my-services-background">
+
+                            <h2 class="my-services-h2">⚡Fast, Responsive & Scalable Apps</h2>
+                            <p class="about-para">I build high-performance web applications optimized for speed,
+                                scalability, and seamless user experience across all devices.</p>
+
+                            <a href="https://addictaco.com/building-scalable-web-apps-for-high-traffic-websites/"
+                                target="_blank" id="learn2">Learn more</a>
+
+                        </div>
+                        <div class=" col-sm-6 col-md-6 col-lg-3 col-xl-3  my-services-background">
+
+                            <h2 class="my-services-h2">🔐 Security-First Approach</h2>
+                            <p class="about-para">I implement strong authentication, data protection, and secure coding
+                                practices to keep your app and users safe.</p>
+
+                            <a href="https://www.securitycompass.com/whitepapers/application-security-for-developers/"
+                                target="_blank" id="learn3">Learn more</a>
+
+                        </div>
+                        <div class=" col-sm-6 col-md-6 col-lg-3 col-xl-3 my-services-background">
+
+                            <h2 class="my-services-h2">🚀 Fast Delivery & Ongoing Support</h2>
+                            <p class="about-para">Timely delivery, clean code, and long-term support — I make
+                                sure your app stays up-to-date, bug-free, and ready to grow.</p>
+
+                            <a href="https://somewhere.com/post/full-stack-developer-improve-product-delivery"
+                                target="_blank" id="learn4">Learn more</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div id="container">
+                <h1 class="work-title">My work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="prepwise.jpeg" alt="" width="300" height="300">
+                        <div class="layer">
+                            <h3>Prepwise</h3>
+                            <p>An AI-based interview readiness platform that analyzes interview patterns, identifies weaknesses, and provides personalized recommendations.</p>
+                 
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="expense.jpeg" alt="" width="300" height="300">
+                        <div class="layer">
+                            <h3>Expense Tracker</h3>
+                            <p>A web application for managing income and expenses, tracking transactions, and viewing spending insights.</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="student.jpeg" alt="" width="300" height="300">
+                        <div class="layer">
+                            <h3>AI Student Helping Assistant</h3>
+                            <p>An AI-powered assistant that helps students find academic information and get relevant answers through conversational interaction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <h1 class="contact-title">Contact Me</h1>
+                <div class="row" style="margin-left: 0;">
+
+                    <div class="col-12 col-md-6">
+                        <div class="contact-left">
+
+                            <p class="contact-para"><i class="fa-solid fa-envelope" style="color: red;"></i>
+                                asmi11112005@gmail.com</p>
+                            <p class="contact-para"><i class="fa-solid fa-phone" style="color: red;"></i> 9442926064</p>
+                            <div class="icons">
+                                <a
+                                    href="https://www.linkedin.com/in/asmi-s-83b3b2337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                        class="fa-brands fa-linkedin change-size"></i></a>
+                                <a href="https://github.com/Asmi-git"><i
+                                        class="fa-brands fa-github change-size"></i></a>
+                            </div>
+                            <a href="RESUME_ASMI.pdf" download class="btn" id="cv-btn">
+                                Download CV
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="contact-right">
+                            <form onsubmit="sendMail(event)">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" name="Name"
+                                        placeholder="Enter your name here" minlength="2" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput2" name="Email"
+                                        placeholder="name@gmail.com"
+                                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                        name="Message" placeholder="Enter yout text here...."></textarea>
+                                </div>
+
+                                <input type="submit" class="btn" id="submit-btn" value="Submit">
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="footer-para">Developed by Asmi &copy; 2025 | Contact: asmi11112005@gmail.com</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function openTab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        function sendMail(event) {
+            event.preventDefault();
+            let parms = {
+                name: document.getElementById("exampleFormControlInput1").value,
+                email: document.getElementById("exampleFormControlInput2").value,
+                message: document.getElementById("exampleFormControlTextarea1").value
+            };
+            emailjs.send("service_gmshagz", "template_rufc6pi", parms).then(function (response) {
+                console.log("Email Sent Successfully", response);
+                document.getElementById("msg").innerText = "Message Sent Successfully";
+                document.querySelector("form").reset();
+                setTimeout(() => {
+                    document.getElementById("msg").innerText = "";
+                }, 5000);
+            }, function (error) {
+                console.error("Email send failed", error);
+                document.getElementById("msg").innerText = "Failed to send Email,Please try again later!!";
+            });
+        }
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "dTz9H0afkZT3c95K3",
+            });
+        })();
+    </script>
+</body>
+
+</html>
